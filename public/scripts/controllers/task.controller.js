@@ -12,39 +12,25 @@ myApp.controller('TaskController', ['$http', 'TaskFactory', function($http, Task
   //   list: [{name: 'sleep', id: 1}, {name: 'wake up', id: 2}]
   // }
 
+//add
   self.addTask = function() {
-    $http({
-      method: 'POST',
-      url: '/tasks',
-      data: self.newTask
-    }).then(function(response){
-      console.log(response);
-      TaskFactory.updateTasks();
+    TaskFactory.addTask(self.newTask);
       self.newTask = {};
-    });
   }
 
+//delete
   self.deleteTask = function(taskId) {
-    $http({
-      method: 'DELETE',
-      url: '/tasks/' + taskId
-    }).then(function(response) {
-      TaskFactory.updateTasks();
-    });
+    TaskFactory.deleteTask(taskId);
   }
 
-  // self.completeTask will stay, because it's the glue between the controller and view
+// self.completeTask will stay, because it's the glue between the controller and view
   self.completeTask = function(taskId) {
     TaskFactory.completeTask(taskId);
   }
 
+// uncomplete
   self.uncompleteTask = function(taskId) {
-    $http({
-      method: 'PUT',
-      url: '/tasks/uncomplete/' + taskId
-    }).then(function(response) {
-      TaskFactory.updateTasks();
-    });
+    TaskFactory.uncompleteTask(taskId);
   }
 
 

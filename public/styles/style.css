@@ -1,11 +1,40 @@
-/*body {
-  background-color: purple;
-}*/
+body {
+  background-color: rgb(148, 111, 255);
+}
 
 .complete {
-  color: tomato;
+  color: orangered;
 }
 
 .active {
-  color: SeaGreen;
+  color: limegreen;
+}
+
+h1 {
+  color: lightcyan;
+  font-family: fantasy;
+  font-size: 44px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h2 {
+  color: black;
+  font-family: cursive;
+}
+
+p {
+  color: black;
+}
+
+th {
+  color: black;
+}
+
+.table th {
+  color: black;
+  font-size: 18px;
+}
+
+.navbar-nav  {
+  font-size: 16px;
 }
