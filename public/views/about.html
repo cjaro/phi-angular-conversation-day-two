@@ -1,18 +1,21 @@
 <!-- This is my about page
 <div ng-repeat="person in ac.listOfPeople">
-  {{person}}
+{{person}}
 </div> -->
 
 
-<h2>this is not the homepage. this is the about page. I bet you thought there'd be some contact info somewhere. swerve. loser.</h2>
-<p>okay sorry I feel bad.<p>
-<ul class="list-group">
-  <li class="list-group-item">952-888-0500</li>
-  <li class="list-group-item">218-348-0366</li>
-  <li class="list-group-item">1000 Devonshire Lane #216, Bloomington, MN 55431</li>
-  <li class="list-group-item">CenturyLink sux</li>
-  <li class="list-group-item"><a href="/#!/home" class="btn btn-danger" role="button">take me home</a></a></li>
-</li>
-</ul>
-<p>Anyways, here's who was watching me snicker while making this app thang:<p>
-<div ng-repeat="person in ac.arrayOfPeeps">{{person}}</div>
+<h2>About</h2>
+<p>Additional Information Page.<p>
+  <ul class="list-group">
+    <li class="list-group-item">952-888-0500</li>
+    <li class="list-group-item">218-348-0366</li>
+    <li class="list-group-item">1000 Devonshire Lane #216, Bloomington, MN 55431</li>
+    <!-- <li class="list-group-item">CenturyLink sux</li> -->
+  </ul>
+  <div>
+    <a href="/#!/home" class="btn btn-primary" role="button">Home</a>
+    <a href="/#!/tasks" class="btn btn-success" role="button">Tasks</a>
+  </div>
+</br>
+<p>Here is a ng-repeat:<p>
+  <div ng-repeat="person in ac.listOfPeople">{{person}}</div>

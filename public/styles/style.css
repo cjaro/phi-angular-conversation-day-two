@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(148, 111, 255);
+  /*background-color: rgb(148, 111, 255);*/
 }
 
 .complete {
@@ -11,15 +11,15 @@ body {
 }
 
 h1 {
-  color: lightcyan;
-  font-family: fantasy;
-  font-size: 44px;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  /*color: lightcyan;*/
+  /*font-fam ily: fantasy;*/
+  /*font-size: 44px;*/
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
 }
 
 h2 {
   color: black;
-  font-family: cursive;
+  /*font-family: cursive;*/
 }
 
 p {
@@ -37,4 +37,13 @@ th {
 
 .navbar-nav  {
   font-size: 16px;
+}
+
+.headerStyle {
+  font-size: 40px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 5px;
+  border: 1px solid rgb(230, 230, 230);
+  padding: 5px;
+  /*text-align: center;*/
 }

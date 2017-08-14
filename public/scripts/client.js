@@ -7,8 +7,8 @@ myApp.config(['$routeProvider', function($routeProvider) {
       controller: 'HomeController',
       controllerAs: 'hc'
     })
-    .when('/todoList', {
-      templateUrl: '/views/todoList.html',
+    .when('/tasks', {
+      templateUrl: '/views/tasks.html',
       controller: 'TaskController',
       controllerAs: 'tc'
     })

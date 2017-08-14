@@ -1,4 +1,4 @@
-myApp.factory('TaskFactory', ['$http', function($http) {
+ myApp.factory('TaskFactory', ['$http', function($http) {
 
   var factoryTasks = { list: [] };
 
